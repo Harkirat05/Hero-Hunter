@@ -1,0 +1,272 @@
+/* Home Page CSS */
+/* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #e01a38;
+}
+.homebody{
+    background-image: url('marvel_intro_animation.gif');
+    background-size: cover;
+}
+
+.container {
+    background-color: #171821;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 3em 2em;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    right: 50%;
+    top: 1em;
+    border-radius: 1em;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+}
+
+input {
+    padding: 1em 0.5em;
+    background-color: #3a3939;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5em;
+    outline: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: #e01a38;
+    color: #ffffff;
+    border-radius: 0.5em;
+}
+
+.display-container {
+    padding: 1em;
+}
+
+.container-character-image {
+    background-color: #ffffff;
+    padding: 0.5em;
+    height: 150px; /* Set fixed height */
+    width: 150px; /* Set fixed width */
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+}
+
+.container-character-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    border-radius: 50%;
+}
+
+.add-favorite {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #e01a38;
+}
+
+.add-favorite:hover {
+    color: red;
+}
+
+.character-name {
+    padding: 0.5em 0 0.8em 0;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.character-description {
+    text-align: justify;
+    color: #a0a0a6;
+    line-height: 2em;
+    font-weight: 300;
+}
+
+.list {
+    position: absolute;
+    width: 64%;
+    background-color: #555;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.autocomplete-items {
+    padding: 0.5em;
+}
+
+.autocomplete-items:hover {
+    background-color: #ddd;
+    color: #171821;
+}
+/* Superhero Page CSS */
+.superbody {
+    background-color: #171821; /* Set background color for the whole page */
+}
+.superhead{
+    color: #ffffff;
+    gap: 5rem
+}
+.superhead span{
+    gap: 50rem;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 50px 20px;
+    background-color: #272933; /* Background color for the container */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+}
+
+.superhero-details {
+    text-align: left; /* Align text to the left */
+    color: white;
+}
+
+.superhero-details img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.superhero-details h2 {
+    margin-bottom: 10px;
+    color: #e01a38; /* Highlight the section titles with a different color */
+}
+
+.superhero-details p {
+    margin-bottom: 20px;
+}
+
+.superhero-details ul {
+    padding-left: 20px; /* Add left padding for better alignment with the text */
+    margin-bottom: 20px;
+    color: #a0a0a6; /* Change bullet point color */
+}
+
+.superhero-details ul li {
+    list-style-type: disc; /* Use disc bullets */
+    margin-bottom: 5px;
+}
+
+.superhero-details a {
+    color: #e01a38;
+    text-decoration: none;
+}
+
+.superhero-details a:hover {
+    text-decoration: underline;
+}
+
+/* Favorites Page CSS */
+
+
+
+h1{
+ font-size: 4rem;
+ text-align: center;
+ margin-bottom: 8rem;
+}
+.favorites-container {
+    max-width: calc(100% - 40px); /* Adjusted maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent items from wrapping to the next line by default */
+    overflow-x: auto; /* Add horizontal scroll if content overflows */
+
+}
+
+.favorite-item {
+    flex: 0 0 auto; /* Allow flex items to shrink as needed */
+    width: 500px; /* Set a fixed width for each item */
+    background-color: #272933; /* Background color for each favorite item */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    margin-bottom: 5rem;
+    margin-left: 35%;
+
+
+}
+
+/* Hero image */
+.favorite-item img {
+    width: 100%; /* Set image width to 100% of parent container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded image */
+}
+
+/* Hero name and description */
+.favorite-item div {
+    color: white;
+}
+
+.favorite-item span {
+    display: block; /* Display the hero name on a new line */
+    font-weight: bold;
+    margin-bottom: 5px; /* Added margin between hero name and description */
+}
+
+.favorite-item p {
+    margin-bottom: 10px; /* Added margin at the bottom of the description */
+}
+
+/* Remove button */
+.remove-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded button */
+}
+
+/* Hover effect for remove button */
+.remove-button:hover {
+    background-color: darkred;
+}
+
+
+.return-button-container {
+    float: right; /* Float the container to the right */
+    margin-top: 2px; /* Add some top margin for spacing */
+}
+
+#return-button {
+    background-color: #e01a38;
+    color: #ffffff;
+    border: none;
+    padding: 1px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#return-button:hover {
+    color: #d9d8d8;
+}
